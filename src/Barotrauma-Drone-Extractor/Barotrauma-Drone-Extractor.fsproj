@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace>Barotrauma_Drone_Extractor</RootNamespace>
+        <WarnOn>3390;$(WarnOn)</WarnOn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="ArgumentParser.fs" />
+        <Compile Include="Extractor.fs" />
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Argu" Version="6.1.1" />
+      <PackageReference Include="BaroLib" Version="1.0.1" />
+      <PackageReference Include="FSharp.XExtensions" Version="1.2.0" />
+    </ItemGroup>
+
+</Project>
